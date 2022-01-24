@@ -3,10 +3,17 @@
     <header>
       <p><b>{{result.name}}</b></p>
     </header>
-    <img :src="'http://openweathermap.org/img/w/'+result.weather[0].icon+'.png' " alt="">
-    <p>{{ result.weather[0].description }}</p>
-    <p>Temp: {{ result.main.temp }}</p>
-    <p>Degrees: {{ result.wind.deg }}</p>
+      <img :src="'http://openweathermap.org/img/w/'+result.weather[0].icon+'.png' " alt="">
+      <p>Weather: {{ result.weather[0].description }}</p>
+      <p><b>More details</b></p>
+      <p>Temp: {{ result.main.temp }}</p>
+      <p>Degrees: {{ result.wind.deg }}</p>
+      <p>Pressure: {{ result.main.pressure }}</p>
+      <p>Humidity: {{ result.main.humidity }}</p>
+      <p><b>Location</b></p>
+      <p>Country: {{ result.sys.country }}</p>
+      <p>Lon: {{ result.coord.lon }}</p>
+      <p>Lat: {{ result.coord.lat }}</p>
   </div>
 </template>
 
