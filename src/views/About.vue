@@ -15,12 +15,12 @@ export default {
   created() {
     let post = {
       title: "2005045",
-      body: "<p>Example2005045</p>",
+      body: "<p>2005045</p>",
       userId: 1,
     };
     let post_update = {
       title: "2005045",
-      body: "<p>Example2005045</p>",
+      body: "<p>2005045</p>",
       userId: 1,
     };
     axios.get("https://jsonplaceholder.typicode.com/todos/1").then((result) => {
